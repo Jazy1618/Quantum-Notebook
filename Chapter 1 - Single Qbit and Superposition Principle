@@ -1,1 +1,3 @@
-
+\chapter{Single Qbit and superposition principle}
+When we are talking about a qbit we are referring to a quantum state and in order to describe it mathematically we need a vector space called Hilbert space.\\
+In the simplest case of a single qbit we define our " computational basis " as follows using the Dirac notation: 
