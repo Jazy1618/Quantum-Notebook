@@ -10,5 +10,11 @@ If you are only interested in reading the document you can safely download the P
 On the other hand, if you want to contribute to the document, just clone the repository and then push your changes.
 In case you want to write a whole chapter please respect the organization of the original file : each chapter has its own folder with the .tex file and any images inside ( don't forget to add the .tex file to the main ), if instead you want to modify something already existing please explain fully why you want to modify it and attach any sources.
 
+# Project organization 
+
+- 📁 NameOfChapter
+  - 📁 images
+  - 🗒️ nameOfChapter.tex
+
 
 Currently the project is hosted here on Overleaf: https://www.overleaf.com/project/64afaf8fcb842131539d2350
