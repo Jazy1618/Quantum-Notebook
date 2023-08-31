@@ -1,0 +1,85 @@
+\documentclass[a4paper, 12pt, twoside]{report}
+
+\usepackage{physics, amsmath, amsfonts, siunitx}
+\usepackage{tcolorbox}
+\usepackage{todonotes}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./ch1} }
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\usepackage{geometry}
+\geometry{
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=3cm,
+    headheight=17pt,
+    includeheadfoot,
+}
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\title{Quantum Computing}
+\author{Pietro Garofalo \\ Jasmine Amani Murphy}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\newpage
+\listoftodos
+\newpage
+\tableofcontents
+\newpage
+
+\chapter*{Introduction}
+Hi everyone, this work is a simple collection of notes taken during the Womanium Global Quantum program, our goal is to try to share as much as possible what we learned during the course and not only : the document is open-source so anyone can participate in the writing or just correct any mistakes, the repository can be found \href{https://github.com/Jazy1618/Quantum-Notebook}{here}.
+
+\newpage
+
+\include{SingleQbit/singleQbit}
+\include{MultistateQbit/multistateQbit}
+\include{QuantumAlgorithms/quantumAlgorithms}
+
+
+\chapter{Qbit Hardware}
+In the previous chapter we saw several examples of the kinds of algorithms that can become possible by leveraging quantum technologies with information processing. To take these algorithms from theory to actualization will require a physical quantum computer capable of performing various calculations on a system of stable qbits. An active area of research in quantum computing is deciding what physical system is best able to model the quantum nature of a qbit, particularly based on the Di Vincenzo’s criteria.
+
+In this chapter we'll go over several of the leading hardware solutions to building a universal gate quantum computer, and at the end compare their pros and cons as it relates to the Di Vincenzo criteria.
+
+\section{Quantum Annealers}
+Before we get into creating quantum computers, Let's discuss anther device that has come a long way in recent decades - the quantum annealer. A quantum annealer is a device designed for optimizing solutions to a single type of problem by quickly searching over a space and finding a solution. 
+
+\section{Neutral-Atom Quantum Computers}
+
+\section{Superconducting Quantum Computers}
+
+\section{Photonic Quantum Computers}
+
+\section{Silicon-based Quantum Computers}
+
+\section{Trapped-Ion Quantum Computers}
+
+\section{Summary}
+
+
+\chapter{Quantum Key Distribution}
+When Peter Shor introduced his now famous Shor's algorithm in the 1990s, it spelled the end of RSA and other factorization-based encryption methods. It was an unofficial call to kick the quantum computing race into high gear - although not all for the same reasons. Suddenly there was an awareness that this technology could devastate the security of various important sectors by rendering their encryption methods useless. With this issue becoming very apparent over time, 
+In light of the capabilities of a fully realized quantum computer, there are certain security concerns that become realized
+
+
+
+\end{document}

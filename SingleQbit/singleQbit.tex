@@ -1,0 +1,16 @@
+\chapter{Single Qbit and superposition principle}
+When we are talking about a qbit we are referring to a quantum state and in order to describe it mathematically we need a vector space called Hilbert space.\\
+In the simplest case of a single qbit we define our " computational basis " as follows using the Dirac notation: 
+\begin{align*}
+    \ket{0} = \begin{pmatrix}1\\0\end{pmatrix} && \ket{1} = \begin{pmatrix}0 \\ 1\end{pmatrix} 
+\end{align*}  
+As the classical case our qbit can  be in either the state $\ket{0}$ or the $\ket{1}$, the difference is a fundamental principle of quantum mechanics called \textit{Quantum superposition}: in classical mechanics things are well defined however in quantum mechanics the state of a particle ( our qbit ) can be write as the linear combination of other states, in other words a sum of two or more states gives as result another valid state
+
+\begin{equation*}
+    \ket{\psi} = \alpha \ket{0} + \beta \ket{1} = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
+\end{equation*}
+
+\section{Quantum logic gates}
+In quantum circuits we can perform operations to the qbits through what are called \textit{Quantum logical gates} represented as unitary matrices. \\
+In order to understand their effects to a qbit is easier to give some examples of the most important ones.
+\subsection{The NOT gate X}
